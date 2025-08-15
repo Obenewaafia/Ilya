@@ -12,10 +12,10 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #2d4a3e;
-            background: linear-gradient(135deg, #f8fffe 0%, #f0f8f5 100%);
+            font-family: 'Helvetica Neue', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #fefefe;
             min-height: 100vh;
         }
 
@@ -26,9 +26,9 @@
         }
 
         header {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(72, 139, 96, 0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
@@ -40,47 +40,34 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 1.2rem 2rem;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #488b60;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #000;
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: #2d4a3e;
-            font-weight: 500;
+            color: #555;
+            font-weight: 400;
+            font-size: 0.95rem;
             transition: color 0.3s ease;
-            position: relative;
+            letter-spacing: 0.3px;
         }
 
         .nav-links a:hover {
-            color: #488b60;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: #6bb77b;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
+            color: #000;
         }
 
         main {
@@ -88,57 +75,49 @@
         }
 
         .hero {
-            padding: 80px 0;
+            padding: 120px 0 80px;
             text-align: center;
-            background: linear-gradient(135deg, rgba(104, 183, 123, 0.1) 0%, rgba(72, 139, 96, 0.05) 100%);
-            margin-bottom: 2rem;
+            background: #fff;
+            margin-bottom: 0;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            color: #2d4a3e;
+            font-size: 2.8rem;
+            color: #000;
             margin-bottom: 1rem;
             font-weight: 300;
+            letter-spacing: -1px;
         }
 
         .hero .subtitle {
-            font-size: 1.3rem;
-            color: #488b60;
+            font-size: 1.1rem;
+            color: #666;
             margin-bottom: 2rem;
-            font-weight: 400;
+            font-weight: 300;
+            letter-spacing: 0.5px;
         }
 
         .hero .description {
-            font-size: 1.1rem;
-            color: #5a6c5d;
-            max-width: 600px;
+            font-size: 1rem;
+            color: #777;
+            max-width: 500px;
             margin: 0 auto;
-            line-height: 1.8;
+            line-height: 1.6;
+            font-weight: 300;
         }
 
         .section {
-            padding: 60px 0;
-            margin-bottom: 2rem;
+            padding: 80px 0;
+            margin-bottom: 0;
         }
 
         .section h2 {
-            font-size: 2.5rem;
-            color: #2d4a3e;
+            font-size: 2rem;
+            color: #000;
             text-align: center;
             margin-bottom: 3rem;
             font-weight: 300;
-            position: relative;
-        }
-
-        .section h2::after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #6bb77b, #488b60);
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
+            letter-spacing: -0.5px;
         }
 
         .grid {
@@ -149,34 +128,36 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(72, 139, 96, 0.1);
-            border: 1px solid rgba(104, 183, 123, 0.2);
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid #f0f0f0;
             transition: all 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(72, 139, 96, 0.15);
+            transform: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .card h3 {
-            color: #488b60;
+            color: #000;
             margin-bottom: 1rem;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 0.3px;
         }
 
         .card p {
-            color: #5a6c5d;
-            line-height: 1.7;
+            color: #666;
+            line-height: 1.6;
+            font-weight: 300;
         }
 
         .sports-section {
-            background: rgba(104, 183, 123, 0.05);
-            border-radius: 20px;
+            background: #fafafa;
+            border-radius: 0;
             padding: 3rem;
             margin: 3rem 0;
         }
@@ -185,35 +166,38 @@
             display: flex;
             align-items: center;
             margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 12px;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 0;
             transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
         }
 
         .sport-item:hover {
-            background: rgba(255, 255, 255, 0.9);
-            transform: translateX(10px);
+            background: #fff;
+            transform: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .sport-icon {
-            font-size: 2.5rem;
-            margin-right: 1.5rem;
-            color: #6bb77b;
+            font-size: 2rem;
+            margin-right: 2rem;
+            color: #333;
         }
 
         .achievements {
-            background: rgba(72, 139, 96, 0.05);
-            border-left: 4px solid #6bb77b;
+            background: #f9f9f9;
+            border-left: 3px solid #000;
             padding: 2rem;
             margin: 2rem 0;
-            border-radius: 0 10px 10px 0;
+            border-radius: 0;
         }
 
         .achievements h4 {
-            color: #488b60;
+            color: #000;
             margin-bottom: 1rem;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: 400;
         }
 
         .achievements ul {
@@ -222,17 +206,19 @@
         }
 
         .achievements li {
-            color: #5a6c5d;
-            margin-bottom: 0.5rem;
+            color: #666;
+            margin-bottom: 0.8rem;
             padding-left: 1.5rem;
             position: relative;
+            font-weight: 300;
         }
 
         .achievements li::before {
-            content: '●';
-            color: #6bb77b;
+            content: '•';
+            color: #000;
             position: absolute;
             left: 0;
+            font-weight: 400;
         }
 
         .interests-grid {
@@ -244,41 +230,38 @@
 
         .interest-card {
             text-align: center;
-            padding: 2rem 1rem;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 15px;
+            padding: 2.5rem 2rem;
+            background: #fff;
+            border-radius: 0;
             transition: all 0.3s ease;
-            border: 2px solid transparent;
+            border: 1px solid #f0f0f0;
         }
 
         .interest-card:hover {
-            border-color: rgba(104, 183, 123, 0.3);
-            background: rgba(255, 255, 255, 0.8);
-            transform: scale(1.05);
+            border-color: #ddd;
+            background: #fff;
+            transform: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .interest-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #6bb77b;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
         }
 
         .contact-section {
-            background: linear-gradient(135deg, #488b60, #6bb77b);
+            background: #000;
             color: white;
             text-align: center;
             padding: 4rem 2rem;
-            border-radius: 20px;
-            margin: 3rem 0;
+            border-radius: 0;
+            margin: 4rem 0 0;
         }
 
         .contact-section h2 {
             color: white;
             margin-bottom: 2rem;
-        }
-
-        .contact-section h2::after {
-            background: white;
         }
 
         .contact-info {
@@ -362,7 +345,7 @@
                 <h1 class="fade-in">Ilya Cuevas</h1>
                 <p class="subtitle fade-in">Student-Athlete & Scholar</p>
                 <p class="description fade-in">
-                    Dedicated high school student balancing excellence in athletics and academics while pursuing creative passions in poetry and music.
+                    Dedicated high school student balancing excellence in athletics and academics while pursuing passions in reading, writing, and exploring diverse cultures.
                 </p>
             </div>
         </section>
@@ -374,7 +357,7 @@
                     <p>
                         I'm a passionate student-athlete who believes in pursuing excellence both on and off the field. 
                         My journey combines the discipline of competitive sports with academic achievement and creative expression. 
-                        Whether I'm scoring goals on the soccer field, crossing finish lines on the track, or crafting verses in poetry, 
+                        Whether I'm scoring goals on the soccer field, crossing finish lines on the track, or diving into a great book, 
                         I approach every challenge with dedication and enthusiasm.
                     </p>
                 </div>
@@ -445,10 +428,10 @@
                 <h2 class="fade-in">Personal Interests</h2>
                 <div class="interests-grid">
                     <div class="interest-card fade-in">
-                        <div class="interest-icon">📝</div>
-                        <h3>Poetry</h3>
-                        <p>Writing original poetry and participating in spoken word events. 
-                        Poetry provides a creative outlet for expressing emotions and experiences.</p>
+                        <div class="interest-icon">📚</div>
+                        <h3>Reading & Writing</h3>
+                        <p>Passionate about literature and creative writing. 
+                        Always exploring new authors and working on personal writing projects.</p>
                     </div>
                     <div class="interest-card fade-in">
                         <div class="interest-icon">🎵</div>
@@ -457,10 +440,10 @@
                         Music serves as both inspiration and relaxation between training and studies.</p>
                     </div>
                     <div class="interest-card fade-in">
-                        <div class="interest-icon">🍽️</div>
-                        <h3>Culinary Arts</h3>
-                        <p>Enthusiastic about cooking and exploring different cuisines. 
-                        Understanding nutrition is essential for athletic performance and overall well-being.</p>
+                        <div class="interest-icon">🌍</div>
+                        <h3>Cultural Cuisine</h3>
+                        <p>Love exploring and trying new foods from different cultures around the world. 
+                        Food is a wonderful way to experience and appreciate diverse traditions.</p>
                     </div>
                 </div>
             </div>
@@ -505,11 +488,11 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 4px 30px rgba(72, 139, 96, 0.15)';
+                header.style.background = 'rgba(255, 255, 255, 1)';
+                header.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.12)';
             } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 2px 20px rgba(72, 139, 96, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
             }
         });
 
