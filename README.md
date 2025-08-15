@@ -333,8 +333,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#athletics">Athletics</a></li>
                 <li><a href="#academics">Academics</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#interests">Interests</a></li>
             </ul>
         </nav>
     </header>
@@ -423,7 +422,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="interests" class="section">
             <div class="container">
                 <h2 class="fade-in">Personal Interests</h2>
                 <div class="interests-grid">
